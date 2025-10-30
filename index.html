@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marka.ai</title>
+<link rel="icon" href="/img/favicon.png" type="image/png">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <div class="header">
+      <img src="img/icon.png" id="icone">
+      <h1 id="headline">🔒 Protegendo a sua criatividade</h1>
+    </div>
+    <div class="controls">
+      <div class="control-row">
+        <div>
+          <label class="descricao">Imagem Principal</label>
+          <input type="file" id="mainImage" accept="image/*">
+        </div>
+        <div>
+          <label class="descricao">Sua Logomarca</label>
+          <input type="file" id="logoImage" accept="image/*">
+        </div>
+        <div>
+          <label class="descricao">Posição da Logo</label>
+          <select id="position">
+            <option value="center">Centro</option>
+            <option value="top-left">Topo Esquerda</option>
+            <option value="top-right">Topo Direita</option>
+            <option value="bottom-left">Baixo Esquerda</option>
+            <option value="bottom-right">Baixo Direita</option>
+            <option value="distribuir">Distribuir</option>
+          </select>
+        </div>
+        <div class="preview">
+          <canvas id="previewCanvas"></canvas>
+        </div>
+      </div>
+      <div class="slider-row">
+        <label>Opacidade</label>
+        <span id="opacityValue">50%</span><br>
+        <input type="range" id="opacity" min="0" max="1" step="0.01" value="0.5">
+      </div>
+      <div class="slider-row">
+        <label>Tamanho da Logo</label>
+        <span id="scaleValue">50%</span><br>
+        <input type="range" id="scale" min="0.1" max="1.0" step="0.01" value="0.5">
+      </div>
+    </div>
+    <button id="download" class="btn-download" disabled>DOWNLOAD</button>
+  </div>
+  <footer>Produzido por - Ribeiro Soluções Digitais</footer>
+  <script src="/js/script.js"></script>
+</body>
+</html>
