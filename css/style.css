@@ -159,7 +159,7 @@ input[type="range"] {
 canvas {
   width: 100%;
   max-width: 380px;
-  max-height: 200px;
+  max-height: 380px;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
